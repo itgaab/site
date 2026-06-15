@@ -1,0 +1,30 @@
+{
+  "about.qmd": {
+    "about.html": "fd8091ca"
+  },
+  "contact.qmd": {
+    "contact.html": "0d39eea5"
+  },
+  "cv.qmd": {
+    "cv.html": "f3be9080",
+    "cv.tex": "117e6436"
+  },
+  "index.qmd": {
+    "index.html": "af509e0f"
+  },
+  "pagina_inicial.qmd": {
+    "pagina_inicial.html": "80a413cb"
+  },
+  "projects.qmd": {
+    "projects.html": "be6bf260"
+  },
+  "projeto1.qmd": {
+    "projeto1.html": "3fa8fa4f"
+  },
+  "projeto2.qmd": {
+    "projeto2.html": "0047451e"
+  },
+  "repositorios.qmd": {
+    "repositorios.html": "ea427649"
+  }
+}
