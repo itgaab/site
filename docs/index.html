@@ -145,7 +145,7 @@ html,body{height:100%;overflow:hidden;font-family:'DM Sans',sans-serif}
 }
 .soc-circle svg{width:15px;height:15px}
 .soc-circle:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-2px);box-shadow:0 4px 12px rgba(45,106,159,.18)}
-.hero-right{display:flex;flex-direction:column;align-items:flex-end;gap:1.5rem}
+.hero-right{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;padding:0 1.5rem}
 .photo-wrap{position:relative}
 .photo-img{
   width:300px;height:360px;border-radius:14px;
@@ -324,7 +324,7 @@ html,body{height:100%;overflow:hidden;font-family:'DM Sans',sans-serif}
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
   </button>
   <div class="nav-spacer"></div>
-  <a href="https://lattes.cnpq.br/1558859767324947" target="_blank" rel="noopener" class="nav-btn" data-tip="Baixar Currículo" style="text-decoration:none;color:rgba(255,255,255,.4);">
+  <a href="curriculo/Curriculo_Italo_Gabriel.pdf" download="Curriculo_Italo_Gabriel.pdf" class="nav-btn" data-tip="Baixar Currículo" style="text-decoration:none;color:rgba(255,255,255,.4);">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
   </a>
   <button class="dm-btn" id="dmToggle" title="Alternar tema">
@@ -341,9 +341,10 @@ html,body{height:100%;overflow:hidden;font-family:'DM Sans',sans-serif}
     <div>
       <div class="hero-tag"><div class="hero-tag-dot"></div>Estatístico · Cientista de Dados · UEPB</div>
       <h1 class="hero-name">Ítalo<br><span>Gabriel</span></h1>
-      <p class="hero-desc">Graduando em Estatística pela UEPB, com experiência em séries temporais, machine learning, sensoriamento remoto e modelagem estatística aplicada a problemas reais.</p>
+      <p class="hero-desc">Graduando em Estatística pela UEPB, com foco em Estatística Espacial, Modelos de Regressão e Machine Learning, Séries Temporais e Planejamento Experimental. Experiência em pesquisa científica, relatórios dinâmicos e análise espacial, com interesse em modelagem espaço-temporal e sensoriamento remoto (imagens SAR).</p>
       <div class="hero-actions">
         <button class="btn-primary" onclick="goTo('Projetos')">Ver Projetos <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+        <a href="curriculo/Curriculo_Italo_Gabriel.pdf" download="Curriculo_Italo_Gabriel.pdf" class="btn-outline">Baixar Currículo (PDF) <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></a>
         <a href="https://lattes.cnpq.br/1558859767324947" target="_blank" rel="noopener" class="btn-outline">Currículo Lattes <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
       </div>
       <div class="hero-socials">
@@ -360,13 +361,7 @@ html,body{height:100%;overflow:hidden;font-family:'DM Sans',sans-serif}
         <div class="corner-br"></div>
         <img src="https://itgaab.github.io/site/perfil.jpg" alt="Ítalo Gabriel" class="photo-img" onerror="this.style.background='#c8dce8';this.removeAttribute('src')">
       </div>
-      <div class="stat-strip">
-        <div class="stat-box"><span class="stat-n">2+</span><span class="stat-l">Anos pesquisa</span></div>
-        <div class="stat-box"><span class="stat-n">3</span><span class="stat-l">Projetos CNPq</span></div>
-        <div class="stat-box"><span class="stat-n">Py</span><span class="stat-l">Python & R</span></div>
-        <div class="stat-box"><span class="stat-n">ML</span><span class="stat-l">Time Series</span></div>
-      </div>
-    </div>
+</div>
   </div>
 </div>
 
@@ -380,15 +375,19 @@ html,body{height:100%;overflow:hidden;font-family:'DM Sans',sans-serif}
         <p class="lead-text">Sou Ítalo Gabriel da Silva, graduando em Estatística pela Universidade Estadual da Paraíba (UEPB), em Campina Grande – PB.</p>
         <p class="body-text">Possuo experiência em análise de séries temporais, modelagem estatística e aplicação de técnicas de aprendizado de máquina a problemas reais, incluindo estudos sobre violência contra a mulher, precipitação climática e classificação de dados de sensoriamento remoto por radar de abertura sintética (SAR).</p>
         <p class="body-text">Atualmente, atuo como bolsista PIBIC/CNPq, desenvolvendo métodos de classificação para séries temporais SAR sob a orientação do Prof. Dr. Pedro Monteiro de Almeida Junior.</p>
+        <p class="body-text">Meu objetivo é atuar como analista de dados, cientista de dados e estatístico, aplicando métodos estatísticos avançados na construção de modelos, análise de séries temporais e desenvolvimento de visualizações interativas, com foco na geração de insights estratégicos. Trabalho com R (Shiny e Quarto) e Python (Streamlit, scikit-learn) para análises, relatórios, aplicações interativas e modelos de predição.</p>
         <p class="body-text">Meus interesses concentram-se em ciência de dados, métodos estatísticos computacionais, análise exploratória de dados, aprendizado de máquina e comunicação científica, buscando transformar dados em informações úteis para apoiar a tomada de decisões e a produção de conhecimento.</p>
       </div>
       <div>
         <div class="eyebrow" style="margin-bottom:1.5rem">Formação &amp; Trajetória</div>
         <div class="timeline">
-          <div class="t-item"><div class="t-dot"></div><div><span class="t-yr">2024 – atual</span><div class="t-title">PIBIC/CNPq — Classificadores SAR</div><div class="t-inst">UEPB · Orient.: Prof. Dr. Pedro Monteiro de Almeida Junior</div></div></div>
-          <div class="t-item"><div class="t-dot"></div><div><span class="t-yr">2023 – 2024</span><div class="t-title">PIBIC/CNPq — Violência contra a Mulher na Paraíba</div><div class="t-inst">UEPB · Orient.: Profª. Dra. Ivonildes da Silva Fonseca</div></div></div>
-          <div class="t-item"><div class="t-dot"></div><div><span class="t-yr">2023</span><div class="t-title">PROEX/UEPB — Extensão Educação Financeira</div><div class="t-inst">Custos de consumo em Campina Grande · 90h</div></div></div>
-          <div class="t-item"><div class="t-dot"></div><div><span class="t-yr">2022 – atual</span><div class="t-title">Bacharelado em Estatística</div><div class="t-inst">Universidade Estadual da Paraíba — UEPB</div></div></div>
+          <div class="t-item"><div class="t-dot"></div><div><span class="t-yr">07/2026 – atual</span><div class="t-title">PROEX/UEPB — Projeto de Extensão: EstatLab</div><div class="t-inst">Extensionista voluntário · Depto. de Estatística da UEPB · Apoio estatístico gratuito a estudantes e profissionais em TCCs, dissertações e teses · <a href="https://estatlab.github.io/estatlab-site" target="_blank" rel="noopener" style="color:var(--blue);font-weight:600;text-decoration:none">Site do projeto</a></div></div></div>
+          <div class="t-item"><div class="t-dot"></div><div><span class="t-yr">07/2026 – atual</span><div class="t-title">PROEX/UEPB — Projeto de Extensão: Data Health</div><div class="t-inst">Extensionista voluntário · UEPB · Desafios da Gestão em Saúde Pública no uso do OpenDataSUS, com R, Python, SQL e QGIS</div></div></div>
+          <div class="t-item"><div class="t-dot"></div><div><span class="t-yr">09/2025 – 08/2026</span><div class="t-title">PIBIC/CNPq — Classificadores para Séries Temporais SAR</div><div class="t-inst">UEPB · Orient.: Prof. Dr. Pedro Monteiro de Almeida Junior</div></div></div>
+          <div class="t-item"><div class="t-dot"></div><div><span class="t-yr">09/2023 – 08/2024</span><div class="t-title">PIBIC/CNPq — Violência contra a Mulher na Paraíba</div><div class="t-inst">UEPB · Orient.: Profª. Dra. Ivonildes da Silva Fonseca</div></div></div>
+          <div class="t-item"><div class="t-dot"></div><div><span class="t-yr">03/2023 – 08/2023</span><div class="t-title">PROEX/UEPB — Projeto de Extensão: Custo dos Itens de Consumo</div><div class="t-inst">UEPB · Orient.: Prof. Dr. Ricardo Alves de Olinda</div></div></div>
+          <div class="t-item"><div class="t-dot"></div><div><span class="t-yr">2022 – atual</span><div class="t-title">Bacharelado em Estatística</div><div class="t-inst">Universidade Estadual da Paraíba — UEPB · Campina Grande · Cursando</div></div></div>
+          <div class="t-item"><div class="t-dot"></div><div><span class="t-yr">2019 – 2021</span><div class="t-title">Ensino Médio</div><div class="t-inst">EREM Abílio de Souza Barbosa, PE · Formado</div></div></div>
         </div>
       </div>
     </div>
@@ -401,12 +400,30 @@ html,body{height:100%;overflow:hidden;font-family:'DM Sans',sans-serif}
     <div class="eyebrow">03 — Habilidades</div>
     <h2 class="sec-title">Ferramentas &amp; <em>competências</em></h2>
     <div class="skills-top">
-      <div class="sk-card"><span class="sk-n">01</span><div class="sk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="8 6 3 12 8 18"/><polyline points="16 6 21 12 16 18"/></svg></div><div class="sk-title">Linguagens</div><ul class="sk-list"><li>Python</li><li>R</li><li>SQL</li><li>LaTeX</li></ul></div>
+      <div class="sk-card"><span class="sk-n">01</span><div class="sk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="8 6 3 12 8 18"/><polyline points="16 6 21 12 16 18"/></svg></div><div class="sk-title">Linguagens</div><ul class="sk-list"><li>R · Quarto (QMD)</li><li>Python</li><li>SQL</li><li>LaTeX</li></ul></div>
       <div class="sk-card"><span class="sk-n">02</span><div class="sk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><div class="sk-title">Machine Learning</div><ul class="sk-list"><li>scikit-learn</li><li>XGBoost / Random Forest</li><li>Prophet / ARIMA</li><li>Deep Learning (básico)</li></ul></div>
       <div class="sk-card"><span class="sk-n">03</span><div class="sk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-6"/></svg></div><div class="sk-title">Análise de Dados</div><ul class="sk-list"><li>pandas · numpy</li><li>matplotlib · seaborn</li><li>tidyverse · ggplot2</li><li>Power BI</li></ul></div>
       <div class="sk-card"><span class="sk-n">04</span><div class="sk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></div><div class="sk-title">Sensoriamento Remoto</div><ul class="sk-list"><li>Dados SAR (Sentinel-1)</li><li>Google Earth Engine</li><li>Classificação de imagens</li><li>QGIS</li></ul></div>
       <div class="sk-card"><span class="sk-n">05</span><div class="sk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg></div><div class="sk-title">Estatística</div><ul class="sk-list"><li>Séries temporais</li><li>Modelos de regressão</li><li>Estatística espacial</li><li>Análise multivariada</li></ul></div>
-      <div class="sk-card"><span class="sk-n">06</span><div class="sk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div><div class="sk-title">Ferramentas</div><ul class="sk-list"><li>Git · GitHub</li><li>Jupyter · RStudio</li><li>VS Code</li><li>Excel avançado</li></ul></div>
+      <div class="sk-card"><span class="sk-n">06</span><div class="sk-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div><div class="sk-title">Ferramentas</div><ul class="sk-list"><li>Shiny · Streamlit</li><li>Git · GitHub</li><li>Jupyter · RStudio · VS Code</li><li>Excel · APIs · HTML/CSS</li></ul></div>
+    </div>
+    <div class="comp-band" style="margin-bottom:1.5rem">
+      <div class="comp-title">Habilidades &amp; competências</div>
+      <div class="comp-sub">Conforme currículo</div>
+      <div style="display:flex;flex-wrap:wrap;gap:.5rem">
+        <span class="ptag" style="background:rgba(255,255,255,.08);color:#cfe3f2">Análise quantitativa de dados socioeconômicos e temporais</span>
+        <span class="ptag" style="background:rgba(255,255,255,.08);color:#cfe3f2">Modelagem estatística (regressão, descritiva, séries temporais, amostragem)</span>
+        <span class="ptag" style="background:rgba(255,255,255,.08);color:#cfe3f2">Construção e interpretação de indicadores</span>
+        <span class="ptag" style="background:rgba(255,255,255,.08);color:#cfe3f2">Programação em R e Python, Git e Quarto</span>
+        <span class="ptag" style="background:rgba(255,255,255,.08);color:#cfe3f2">Manipulação e tratamento de dados</span>
+        <span class="ptag" style="background:rgba(255,255,255,.08);color:#cfe3f2">Gráficos e dashboards analíticos</span>
+        <span class="ptag" style="background:rgba(255,255,255,.08);color:#cfe3f2">Planejamento de experimentos</span>
+        <span class="ptag" style="background:rgba(255,255,255,.08);color:#cfe3f2">Sensoriamento remoto e imagens SAR</span>
+        <span class="ptag" style="background:rgba(255,255,255,.08);color:#cfe3f2">Pensamento analítico e crítico</span>
+        <span class="ptag" style="background:rgba(255,255,255,.08);color:#cfe3f2">Trabalho em equipe</span>
+        <span class="ptag" style="background:rgba(255,255,255,.08);color:#cfe3f2">Comunicação de resultados técnicos</span>
+        <span class="ptag" style="background:rgba(255,255,255,.08);color:#cfe3f2">Idioma: Português</span>
+      </div>
     </div>
     <div class="comp-band">
       <div class="comp-title">Nível de proficiência</div>
@@ -434,9 +451,9 @@ html,body{height:100%;overflow:hidden;font-family:'DM Sans',sans-serif}
       <div class="pcard pfeatured">
         <div>
           <span class="feat-badge">★ Projeto destaque</span>
-          <div class="ptype">PIBIC · 2024–2025</div>
+          <div class="ptype">Pesquisa · 09/2025–08/2026</div>
           <div class="ptitle">Classificadores para Séries Temporais SAR</div>
-          <p class="pdesc" style="margin-top:.75rem">Desenvolvimento de classificadores supervisionados para séries temporais derivadas de imagens SAR (Sentinel-1), aplicados ao monitoramento de uso e cobertura do solo na Paraíba.</p>
+          <p class="pdesc" style="margin-top:.75rem">Pesquisa sobre novos classificadores para séries temporais de imagens de radar de abertura sintética (SAR), com modelagem de dados sequenciais e dependência temporal por processos ARMA. Usa teoria da informação (entropia de Shannon, divergência de Kullback-Leibler e a classe de divergências (h, φ)) para construir métodos de classificação de séries temporais (TSC).</p>
           <div class="ptags" style="margin-top:1rem"><span class="ptag">Python</span><span class="ptag">scikit-learn</span><span class="ptag">Sentinel-1</span><span class="ptag">SAR</span><span class="ptag">GEE</span></div>
         </div>
         <div class="feat-visual">
@@ -445,7 +462,7 @@ html,body{height:100%;overflow:hidden;font-family:'DM Sans',sans-serif}
         </div>
       </div>
       <div class="pcard">
-        <div class="ptype">PIBIC · 2023–2024</div>
+        <div class="ptype">PIBIC · 09/2023–08/2024</div>
         <div class="ptitle">Violência contra a Mulher na Paraíba</div>
         <p class="pdesc">Análise estatística qualitativa e quantitativa dos registros de violência contra a mulher no estado da Paraíba nos anos de 2021 e 2022, com modelagem exploratória e geoestatística.</p>
         <div class="ptags"><span class="ptag">R</span><span class="ptag">ggplot2</span><span class="ptag">Estatística espacial</span><span class="ptag">CNPq</span></div>
@@ -478,8 +495,34 @@ html,body{height:100%;overflow:hidden;font-family:'DM Sans',sans-serif}
       <div class="pcard">
         <div class="ptype">Projeto Acadêmico · Em Andamento</div>
         <div class="ptitle">Séries Temporais com Sazonalidade</div>
-        <p class="pdesc">Estudo e modelagem de séries temporais de passageiros aéreos, explorando padrões sazonais, decomposição temporal e técnicas de previsão.</p>
-        <div class="ptags"><span class="ptag">R</span><span class="ptag">Séries Temporais</span><span class="ptag">Sazonalidade</span><span class="ptag">Forecast</span></div>
+        <p class="pdesc">Estudo e modelagem de séries temporais de passageiros aéreos, explorando padrões sazonais, decomposição temporal e técnicas de previsão (ETS, ARIMA, SARIMA e STL em documentos Quarto).</p>
+        <div class="ptags"><span class="ptag">R</span><span class="ptag">tsibble</span><span class="ptag">fable</span><span class="ptag">Séries Temporais</span><span class="ptag">Sazonalidade</span></div>
+      </div>
+      <div class="pcard">
+        <div class="ptype">Em desenvolvimento · Consultoria Estatística</div>
+        <div class="ptitle">Dashboard de dados do Airbnb no Rio de Janeiro</div>
+        <p class="pdesc">App interativo com seis partes (mapa por bairro, evolução temporal, avaliações, simulador de investimento com machine learning e recomendação por turismo), com assistente de IA (VANDER IA) integrado via API da Anthropic. Desenvolvido em equipe com Elizeu Medeiros e José Wanderson, com orientação do Prof. Pedro Almeida.</p>
+        <div class="ptags"><span class="ptag">Python</span><span class="ptag">Streamlit</span><span class="ptag">scikit-learn</span><span class="ptag">APIs</span></div>
+        <a href="https://airbnb-rj.streamlit.app" target="_blank" rel="noopener" class="plink">Ver aplicação →</a>
+      </div>
+      <div class="pcard">
+        <div class="ptype">Extensão · 07/2026 – atual</div>
+        <div class="ptitle">Site do projeto EstatLab</div>
+        <p class="pdesc">Site para divulgar o apoio estatístico gratuito, os cursos e as oficinas do EstatLab, projeto de extensão do Departamento de Estatística da UEPB.</p>
+        <div class="ptags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">GitHub Pages</span></div>
+        <a href="https://estatlab.github.io/estatlab-site" target="_blank" rel="noopener" class="plink">Ver site →</a>
+      </div>
+      <div class="pcard">
+        <div class="ptype">Projeto Acadêmico · Em Andamento</div>
+        <div class="ptitle">Análise espacial de queimadas em Pernambuco</div>
+        <p class="pdesc">Estudo da distribuição espacial dos focos de queimadas em Pernambuco, com mapas interativos e estáticos, densidade de kernel e modelo de processo pontual, em relatório e apresentação Quarto.</p>
+        <div class="ptags"><span class="ptag">R</span><span class="ptag">Quarto</span><span class="ptag">sf</span><span class="ptag">geobr</span><span class="ptag">tmap</span><span class="ptag">spatstat</span></div>
+      </div>
+      <div class="pcard">
+        <div class="ptype">Extensão · 07/2026 – atual</div>
+        <div class="ptitle">Data Health — OpenDataSUS</div>
+        <p class="pdesc">Programa "Desafios da Gestão em Saúde Pública no uso do OpenDataSUS": capacita profissionais e estudantes da saúde a acessar, organizar e analisar grandes bases do SUS (160 horas de cursos e e-book interativo).</p>
+        <div class="ptags"><span class="ptag">R</span><span class="ptag">Python</span><span class="ptag">SQL</span><span class="ptag">QGIS</span></div>
       </div>
     </div>
   </div>
@@ -493,6 +536,10 @@ html,body{height:100%;overflow:hidden;font-family:'DM Sans',sans-serif}
 
     <div class="pub-section">
       <div class="cert-title">Premiação</div>
+      <div class="pub-item">
+        <div><div class="pub-name">🏆 Menção Honrosa — 4º Workshop de Análise de Dados (WANDA)</div><div class="pub-meta">Campina Grande, PB · 2026</div><div class="pub-meta">"Rede Neural Perceptron Multicamadas para identificação de obstrução do fluxo aéreo em dados de espirometria do NHANES"</div></div>
+        <span class="pub-badge">2026</span>
+      </div>
       <div class="pub-item">
         <div><div class="pub-name">🏆 Menção Honrosa — Ciências Humanas</div><div class="pub-meta">XXXI Encontro de Iniciação Científica (ENIC) · UEPB · 2024</div><div class="pub-meta">"Qualificando e quantificando a violência contra a mulher na Paraíba nos anos de 2021 e 2022"</div></div>
         <span class="pub-badge">2024</span>
@@ -510,43 +557,54 @@ html,body{height:100%;overflow:hidden;font-family:'DM Sans',sans-serif}
         <span class="pub-badge">2024</span>
       </div>
       <div class="pub-item">
-        <div><div class="pub-name">MODELO XGBOOST NA PREDIÇÃO DE OBSTRUÇÃO PULMONAR: UMA ABORDAGEM BASEADA EM DADOS DE ESPIROMETRIA DO NHANES</div><div class="pub-meta">Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia (CoBICET) · UEPB</div><div class="pub-meta">Autores: Ítalo Gabriel da Silva, Romário de Sousa Almeida, José Wanderson Ferreira de Freitas, Elizeu Silva de Medeiros, Maria Helena Ramos de Macedo e Morramed da Silva Souto</div></div>
+        <div><div class="pub-name">MODELO XGBOOST NA PREDIÇÃO DE OBSTRUÇÃO PULMONAR: UMA ABORDAGEM BASEADA EM DADOS DE ESPIROMETRIA DO NHANES</div><div class="pub-meta">VII COBICET — Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia · UEPB · Trabalho completo em anais</div><div class="pub-meta">Autores: Ítalo Gabriel da Silva, Romário de Sousa Almeida, José Wanderson Ferreira de Freitas, Elizeu Silva de Medeiros, Maria Helena Ramos de Macedo e Morramed da Silva Souto</div></div>
         <span class="pub-badge">2026</span>
       </div>
       <div class="pub-item">
-        <div><div class="pub-name">MODELAGEM PREDITIVA E INTERPRETÁVEL PARA PREVISÃO DE LUCRO NO COMÉRCIO ELETRÔNICO</div><div class="pub-meta">Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia (CoBICET) · UEPB</div><div class="pub-meta">Autores: Alexandre Bezerra de Souza, Romário de Sousa Almeida, Arthur Victor Ramos Vidal Negreiros, Maria Helena Ramos de Macedo, Eduarda da Silva Brito e Ítalo Gabriel da Silva</div></div>
+        <div><div class="pub-name">MODELAGEM PREDITIVA E INTERPRETÁVEL PARA PREVISÃO DE LUCRO NO COMÉRCIO ELETRÔNICO: UMA ANÁLISE COMPARATIVA ENTRE MÉTODOS ESTATÍSTICOS E ENSEMBLE DE APRENDIZADO DE MÁQUINA</div><div class="pub-meta">VII COBICET — Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia · UEPB · Trabalho completo em anais</div><div class="pub-meta">Autores: Alexandre Bezerra de Souza, Romário de Sousa Almeida, Arthur Victor Ramos Vidal Negreiros, Maria Helena Ramos de Macedo, Eduarda da Silva Brito e Ítalo Gabriel da Silva</div></div>
         <span class="pub-badge">2026</span>
       </div>
       <div class="pub-item">
-        <div><div class="pub-name">MODELO HÍBRIDO PROPHET+LIGHTGBM PARA PREVISÃO DE DEMANDA ELÉTRICA</div><div class="pub-meta">Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia (CoBICET) · UEPB</div><div class="pub-meta">Autores: Elizeu Silva de Medeiros, Romário de Sousa Almeida, Ítalo Gabriel da Silva, Alexandre Bezerra de Souza, Eduarda da Silva Brito e José Wanderson Ferreira de Freitas</div></div>
+        <div><div class="pub-name">MODELO HÍBRIDO PROPHET+LIGHTGBM PARA PREVISÃO DE DEMANDA ELÉTRICA: UMA ABORDAGEM EM DUAS CAMADAS PARA O SUBSISTEMA SUDESTE DO BRASIL</div><div class="pub-meta">VII COBICET — Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia · UEPB · Trabalho completo em anais</div><div class="pub-meta">Autores: Elizeu Silva de Medeiros, Romário de Sousa Almeida, Ítalo Gabriel da Silva, Alexandre Bezerra de Souza, Eduarda da Silva Brito e José Wanderson Ferreira de Freitas</div></div>
         <span class="pub-badge">2026</span>
       </div>
       <div class="pub-item">
-        <div><div class="pub-name">PREDIÇÃO DE CÂNCER CERVICAL COM MODELO XGBOOST: INTERPRETAÇÃO DE FATORES DE RISCO E APLICABILIDADE CLÍNICA</div><div class="pub-meta">Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia (CoBICET) · UEPB</div><div class="pub-meta">Autores: Maria Helena Ramos de Macêdo, Romário de Sousa Almeida, Eduarda da Silva Brito, Arthur Victor Ramos Vidal Negreiros, Ítalo Gabriel da Silva e José Wanderson Ferreira de Freitas</div></div>
+        <div><div class="pub-name">PREDIÇÃO DE CÂNCER CERVICAL COM MODELO XGBOOST: INTERPRETAÇÃO DE FATORES DE RISCO E APLICABILIDADE CLÍNICA</div><div class="pub-meta">VII COBICET — Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia · UEPB · Trabalho completo em anais</div><div class="pub-meta">Autores: Maria Helena Ramos de Macêdo, Romário de Sousa Almeida, Eduarda da Silva Brito, Arthur Victor Ramos Vidal Negreiros, Ítalo Gabriel da Silva e José Wanderson Ferreira de Freitas</div></div>
         <span class="pub-badge">2026</span>
       </div>
       <div class="pub-item">
-        <div><div class="pub-name">DINÂMICA DA DENGUE INFLUENCIADA PELO CLIMA EM UM AMBIENTE URBANO TROPICAL</div><div class="pub-meta">Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia (CoBICET) · UEPB</div><div class="pub-meta">Autores: José Wanderson Ferreira de Freitas, Romário de Sousa Almeida, Ítalo Gabriel da Silva, Elizeu Silva de Medeiros, Morramed da Silva Souto e Arthur Victor Ramos Vidal Negreiros</div></div>
+        <div><div class="pub-name">DINÂMICA DA DENGUE INFLUENCIADA PELO CLIMA EM UM AMBIENTE URBANO TROPICAL: UMA ANÁLISE COMPARATIVA ENTRE A REGRESSÃO BINOMIAL NEGATIVA E O MODELO RANDOM FOREST</div><div class="pub-meta">VII COBICET — Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia · UEPB · Trabalho completo em anais</div><div class="pub-meta">Autores: José Wanderson Ferreira de Freitas, Romário de Sousa Almeida, Ítalo Gabriel da Silva, Elizeu Silva de Medeiros, Morramed da Silva Souto e Arthur Victor Ramos Vidal Negreiros</div></div>
         <span class="pub-badge">2026</span>
       </div>
+    </div>
+
+    <div class="pub-section">
+      <div class="cert-title">Resumos em Anais</div>
+      <div class="pub-item"><div><div class="pub-name">Modelo de machine learning Random Forest na predição de obstrução pulmonar: uma abordagem baseada em dados de espirometria do NHANES</div><div class="pub-meta">VI Congresso Internacional Multidisciplinar de Saúde: Mudanças Climáticas e Saúde Popular · 22 a 24 de setembro de 2026</div><div class="pub-meta">Autores: Ítalo Gabriel da Silva, Catarina Isabel Franca de Aragão e Eloiza Barbosa Silva</div></div><span class="pub-badge">2026</span></div>
     </div>
 
     <div class="pub-section">
       <div class="cert-title">Pôsteres Científicos</div>
+      <div class="pub-item"><div><div class="pub-name">Random Forest na predição de obstrução pulmonar com dados do NHANES</div><div class="pub-meta">VI Congresso Internacional Multidisciplinar de Saúde · 2026</div></div><span class="pub-badge">2026</span></div>
       <div class="pub-item"><div><div class="pub-name">Previsão de Precipitação Total Mensal Utilizando Séries Temporais e Prophet</div><div class="pub-meta">IV EPBEST · UEPB · 2023 · Forecasting com modelo Prophet (Meta) aplicado ao clima de Campina Grande–PB</div></div><span class="pub-badge">2023</span></div>
-      <div class="pub-item"><div><div class="pub-name">Modelo de Regressão Logística na predição de obstrução pulmonar: Uma Abordagem Baseada em Dados de Espirometria do NHANES</div><div class="pub-meta">X Encontro de Matemática e Probabilidade Aplicadas · UEPB · 2026</div></div><span class="pub-badge">2026</span></div>
-      <div class="pub-item"><div><div class="pub-name">Dinâmica da Dengue Influenciada pelo Clima em um Ambiente Urbano Tropical: Modelagem via Regressão Binomial Negativa</div><div class="pub-meta">X Encontro de Matemática e Probabilidade Aplicadas · UEPB · 2026</div></div><span class="pub-badge">2026</span></div>
+      <div class="pub-item"><div><div class="pub-name">Modelo de Regressão Logística na predição de obstrução pulmonar: Uma Abordagem Baseada em Dados de Espirometria do NHANES</div><div class="pub-meta">X Encontro de Matemática Pura e Aplicada · UEPB · 2026</div></div><span class="pub-badge">2026</span></div>
+      <div class="pub-item"><div><div class="pub-name">Dinâmica da Dengue Influenciada pelo Clima em um Ambiente Urbano Tropical: Modelagem via Regressão Binomial Negativa</div><div class="pub-meta">X Encontro de Matemática Pura e Aplicada · UEPB · 2026</div></div><span class="pub-badge">2026</span></div>
     </div>
 
     <div class="pub-section">
       <div class="cert-title">Bolsas &amp; Projetos</div>
-      <div class="pub-item"><div><div class="pub-name">PIBIC/CNPq — Classificadores para Séries Temporais SAR</div><div class="pub-meta">Bolsista · UEPB · 2024/2025 · Orient.: Prof. Dr. Pedro Monteiro de Almeida Junior</div></div><span class="pub-badge">Em andamento</span></div>
-      <div class="pub-item"><div><div class="pub-name">PIBIC/CNPq — Violência Contra a Mulher na Paraíba</div><div class="pub-meta">Bolsista · UEPB · 2023/2024 · Orient.: Profª. Dra. Ivonildes da Silva Fonseca</div></div><span class="pub-badge">Concluído</span></div>
-      <div class="pub-item"><div><div class="pub-name">PROEX/UEPB — Custos de Consumo em Campina Grande</div><div class="pub-meta">Aluno Extensionista Bolsista · 90h · 2023</div></div><span class="pub-badge">Concluído</span></div>
+      <div class="pub-item"><div><div class="pub-name">PIBIC/CNPq — Classificadores para Séries Temporais SAR</div><div class="pub-meta">Projeto de pesquisa · UEPB · 09/2025 a 08/2026 · Responsável: Prof. Dr. Pedro Monteiro de Almeida Junior</div></div><span class="pub-badge">Em andamento</span></div>
+      <div class="pub-item"><div><div class="pub-name">PIBIC/CNPq — Violência Contra a Mulher na Paraíba</div><div class="pub-meta">Bolsista · UEPB · 09/2023 a 08/2024 · Orient.: Profª. Dra. Ivonildes da Silva Fonseca</div></div><span class="pub-badge">Concluído</span></div>
+      <div class="pub-item"><div><div class="pub-name">PROEX/UEPB — Custos de Consumo em Campina Grande</div><div class="pub-meta">Aluno Extensionista Bolsista · 90h · 03/2023 a 08/2023 · Responsável: Ricardo Alves de Olinda</div></div><span class="pub-badge">Concluído</span></div>
+      <div class="pub-item"><div><div class="pub-name">EstatLab — Departamento de Estatística da UEPB</div><div class="pub-meta">Voluntário · Aluno extensionista · desde 07/2026 · apoio estatístico gratuito a TCCs, dissertações e teses, além de cursos e oficinas</div></div><span class="pub-badge">Em andamento</span></div>
+      <div class="pub-item"><div><div class="pub-name">Data Health — Programa de extensão da UEPB</div><div class="pub-meta">Voluntário · desde 07/2026 · "Desafios da Gestão em Saúde Pública no uso do OpenDataSUS"</div></div><span class="pub-badge">Em andamento</span></div>
     </div>
 
     <div class="pub-section">
       <div class="cert-title">Eventos Acadêmicos</div>
+      <div class="pub-item"><div><div class="pub-name">IV Workshop de Análise de Dados (WANDA)</div><div class="pub-meta">Campina Grande, PB · 2026</div></div><span class="pub-badge">2026</span></div>
+      <div class="pub-item"><div><div class="pub-name">VII COBICET</div><div class="pub-meta">Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia · 2026</div></div><span class="pub-badge">2026</span></div>
+      <div class="pub-item"><div><div class="pub-name">6º AFYA Global Meeting</div><div class="pub-meta">2026</div></div><span class="pub-badge">2026</span></div>
       <div class="pub-item"><div><div class="pub-name">Dia do Estatístico — UEPB</div><div class="pub-meta">Departamento de Estatística · UEPB · 27/05/2026 · 8h</div></div><span class="pub-badge">2026</span></div>
       <div class="pub-item"><div><div class="pub-name">V Encontro Paraibano de Estatística — V EPBEST</div><div class="pub-meta">UEPB · 2025</div></div><span class="pub-badge">2025</span></div>
       <div class="pub-item"><div><div class="pub-name">XXXI Encontro de Iniciação Científica — ENIC</div><div class="pub-meta">UEPB · IV Congresso Universitário · 2024</div></div><span class="pub-badge">2024</span></div>
@@ -554,18 +612,24 @@ html,body{height:100%;overflow:hidden;font-family:'DM Sans',sans-serif}
       <div class="pub-item"><div><div class="pub-name">Dia do Estatístico — UEPB</div><div class="pub-meta">Departamento de Estatística · 2023</div></div><span class="pub-badge">2023</span></div>
       <div class="pub-item"><div><div class="pub-name">O Papel da Ciência de Dados na Estatística</div><div class="pub-meta">Evento acadêmico · Dep. Estatística, UEPB · 2023</div></div><span class="pub-badge">2023</span></div>
       <div class="pub-item"><div><div class="pub-name">II Congresso Universitário da UEPB</div><div class="pub-meta">Universidade Estadual da Paraíba · 2022</div></div><span class="pub-badge">2022</span></div>
-      <div class="pub-item"><div><div class="pub-name">Evento sobre Tuberculose</div><div class="pub-meta">Evento acadêmico de saúde pública · UEPB · 2026</div></div><span class="pub-badge">2026</span></div>
+      <div class="pub-item"><div><div class="pub-name">Encontro Tuberculose em foco</div><div class="pub-meta">Evento acadêmico de saúde pública · 2026</div></div><span class="pub-badge">2026</span></div>
     </div>
 
     <div class="pub-section">
       <div class="cert-title">Minicursos &amp; Capacitações</div>
-      <div class="pub-item"><div><div class="pub-name">Minicurso: Aplicando R no Mundo Real</div><div class="pub-meta">Minicurso de 8 horas sobre aplicações práticas da linguagem R · 2026</div></div><span class="pub-badge">2026</span></div>
-      <div class="pub-item"><div><div class="pub-name">Introdução à Linguagem Python</div><div class="pub-meta">Curso introdutório de programação com Python</div></div><span class="pub-badge">2025</span></div>
-      <div class="pub-item"><div><div class="pub-name">Programação Orientada a Objetos com Python</div><div class="pub-meta">Fundamentos de POO aplicados à linguagem Python</div></div><span class="pub-badge">2025</span></div>
-      <div class="pub-item"><div><div class="pub-name">Desenvolvimento Orientado a Objetos Utilizando Python</div><div class="pub-meta">Desenvolvimento de projetos completos com OOP em Python</div></div><span class="pub-badge">2025</span></div>
-      <div class="pub-item"><div><div class="pub-name">Estruturas de Dados em Python</div><div class="pub-meta">Curso sobre estruturas de dados fundamentais com Python</div></div><span class="pub-badge">2025</span></div>
-      <div class="pub-item"><div><div class="pub-name">Criação de Interface Gráfica com Python</div><div class="pub-meta">Desenvolvimento de interfaces gráficas utilizando bibliotecas Python</div></div><span class="pub-badge">2025</span></div>
-      <div class="pub-item"><div><div class="pub-name">Minicurso do V EPBEST</div><div class="pub-meta">Minicurso ministrado no âmbito do V Encontro Paraibano de Estatística · UEPB · 2025</div></div><span class="pub-badge">2025</span></div>
+      <div class="pub-item"><div><div class="pub-name">IA vs. impactos éticos</div><div class="pub-meta">VII COBICET · 1h</div></div><span class="pub-badge">2026</span></div>
+      <div class="pub-item"><div><div class="pub-name">Flow Shop: modelagem, otimização e análise estatística</div><div class="pub-meta">VII COBICET · 2h</div></div><span class="pub-badge">2026</span></div>
+      <div class="pub-item"><div><div class="pub-name">Design Thinking aumentado por IA</div><div class="pub-meta">VII COBICET · 2h</div></div><span class="pub-badge">2026</span></div>
+      <div class="pub-item"><div><div class="pub-name">Tenho uma ideia. E agora?</div><div class="pub-meta">VII COBICET · 2h</div></div><span class="pub-badge">2026</span></div>
+      <div class="pub-item"><div><div class="pub-name">Aplicando R no mundo real</div><div class="pub-meta">Analise Cursos · 8h · aplicações práticas da linguagem R</div></div><span class="pub-badge">2026</span></div>
+      <div class="pub-item"><div><div class="pub-name">Introdução à Linguagem Python</div><div class="pub-meta">Fundação Bradesco · 01/2025 · 18h</div></div><span class="pub-badge">2025</span></div>
+      <div class="pub-item"><div><div class="pub-name">Programação Orientada a Objetos com Python</div><div class="pub-meta">Fundação Bradesco · 01/2025 · 5h</div></div><span class="pub-badge">2025</span></div>
+      <div class="pub-item"><div><div class="pub-name">Desenvolvimento Orientado a Objetos Utilizando Python</div><div class="pub-meta">Fundação Bradesco · 01/2025 · 10h</div></div><span class="pub-badge">2025</span></div>
+      <div class="pub-item"><div><div class="pub-name">Projeto completo em Python com estruturas de dados</div><div class="pub-meta">Fundação Bradesco · 01/2025 · 10h</div></div><span class="pub-badge">2025</span></div>
+      <div class="pub-item"><div><div class="pub-name">Projeto com interface gráfica em Python</div><div class="pub-meta">Fundação Bradesco · 01/2025 · 10h</div></div><span class="pub-badge">2025</span></div>
+      <div class="pub-item"><div><div class="pub-name">Explorando R e Python com Spark na Estatística</div><div class="pub-meta">V EPBEST · 4h</div></div><span class="pub-badge">2025</span></div>
+      <div class="pub-item"><div><div class="pub-name">Normas e diretrizes do sistema CEP/CONEP</div><div class="pub-meta">UEPB · 01/2022 · 2h</div></div><span class="pub-badge">2022</span></div>
+      <div class="pub-item"><div><div class="pub-name">Minicurso: submissão de projetos à Plataforma</div><div class="pub-meta">UEPB · 01/2022 · 2h</div></div><span class="pub-badge">2022</span></div>
     </div>
   </div>
 </div>
@@ -583,13 +647,12 @@ html,body{height:100%;overflow:hidden;font-family:'DM Sans',sans-serif}
           <div class="email-text">italozil08@gmail.com</div>
           <div class="email-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
         </a>
-        <p class="contact-phone">(83) 99802-4716 · Campina Grande, PB</p>
         <div class="map-wrap">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.5!2d-35.9008!3d-7.2295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac1e31d70da14f%3A0x7bfa42f5b0a50a89!2sCCT%20-%20Centro%20de%20Ci%C3%AAncias%20e%20Tecnologia%20-%20UEPB!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="CCT - UEPB"></iframe>
+          <iframe src="https://www.google.com/maps?q=CCT+-+Centro+de+Ci%C3%AAncias+e+Tecnologia+UEPB,+Av.+Juv%C3%AAncio+Arruda,+s/n,+Universit%C3%A1rio,+Campina+Grande+-+PB,+58109-790&output=embed&hl=pt-BR" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="CCT - UEPB"></iframe>
         </div>
         <p class="map-label">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          CCT — UEPB · Campina Grande, PB
+          CCT — Centro de Ciências e Tecnologia, UEPB · Av. Juvêncio Arruda, s/n, Universitário, Campina Grande – PB, 58109-790
         </p>
       </div>
       <div class="clinks">
@@ -597,6 +660,7 @@ html,body{height:100%;overflow:hidden;font-family:'DM Sans',sans-serif}
         <a href="https://www.linkedin.com/in/%C3%ADtalo-gabriel-313194327/" target="_blank" rel="noopener" class="clink"><div class="cl-icon" style="background:#e8f4fb;border:1px solid rgba(0,119,181,.18)"><svg width="18" height="18" viewBox="0 0 24 24" fill="#0077b5"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div><div class="cl-meta"><small>LinkedIn</small><span>Ítalo Gabriel da Silva</span></div><svg class="cl-arr" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
         <a href="https://lattes.cnpq.br/1558859767324947" target="_blank" rel="noopener" class="clink"><div class="cl-icon" style="background:var(--blue-lt);border:1px solid rgba(45,106,159,.18)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M8 9h3m0 0h4m-4 0v6M8 15h3"/></svg></div><div class="cl-meta"><small>Lattes — CNPq</small><span>lattes.cnpq.br/1558859767324947</span></div><svg class="cl-arr" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
         <a href="https://orcid.org/0009-0002-3246-446X" target="_blank" rel="noopener" class="clink"><div class="cl-icon" style="background:#f0fdf4;border:1px solid rgba(22,163,74,.2)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><circle cx="12" cy="6" r=".5" fill="#16a34a"/></svg></div><div class="cl-meta"><small>ORCID</small><span>0009-0002-3246-446X</span></div><svg class="cl-arr" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
+        <a href="https://wa.me/5583998024716?text=Ol%C3%A1%2C%20%C3%8Dtalo%21%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20seu%20trabalho%20e%20como%20podemos%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener" class="clink"><div class="cl-icon" style="background:#f0fdf4;border:1px solid rgba(37,211,102,.25)"><svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></div><div class="cl-meta"><small>WhatsApp</small><span>(83) 99802-4716</span></div><svg class="cl-arr" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
         <a href="mailto:italozil08@gmail.com" class="clink"><div class="cl-icon" style="background:#fef2f2;border:1px solid rgba(239,68,68,.18)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="cl-meta"><small>E-mail</small><span>italozil08@gmail.com</span></div><svg class="cl-arr" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
       </div>
     </div>
