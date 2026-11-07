@@ -298,6 +298,15 @@ html,body{height:100%;overflow:hidden;font-family:'DM Sans',sans-serif}
   .skills-top{grid-template-columns:1fr}
   .hero-right{flex-direction:column}
 }
+
+.lv{display:flex;gap:5px;flex:1;max-width:none}
+.lv i{display:block;height:6px;flex:1;border-radius:3px;background:rgba(255,255,255,.12)}
+.lv[data-lv="1"] i:nth-child(1),.lv[data-lv="2"] i:nth-child(-n+2),.lv[data-lv="3"] i{background:var(--accent)}
+.lv[data-lv="1.5"] i:nth-child(1){background:var(--accent)}
+.lv[data-lv="1.5"] i:nth-child(2){background:linear-gradient(90deg,var(--accent) 50%,rgba(255,255,255,.12) 50%)}
+.lv-txt{font-size:.8rem;color:rgba(255,255,255,.78);width:150px;flex-shrink:0;text-align:right}
+.sb-row .sb-label{width:210px}
+@media(max-width:600px){.sb-row .sb-label{width:130px}.lv-txt{width:84px}}
 </style>
 </head>
 <body>
@@ -374,7 +383,6 @@ html,body{height:100%;overflow:hidden;font-family:'DM Sans',sans-serif}
       <div>
         <p class="lead-text">Sou Ítalo Gabriel da Silva, graduando em Estatística pela Universidade Estadual da Paraíba (UEPB), em Campina Grande – PB.</p>
         <p class="body-text">Possuo experiência em análise de séries temporais, modelagem estatística e aplicação de técnicas de aprendizado de máquina a problemas reais, incluindo estudos sobre violência contra a mulher, precipitação climática e classificação de dados de sensoriamento remoto por radar de abertura sintética (SAR).</p>
-        <p class="body-text">Atualmente, atuo como bolsista PIBIC/CNPq, desenvolvendo métodos de classificação para séries temporais SAR sob a orientação do Prof. Dr. Pedro Monteiro de Almeida Junior.</p>
         <p class="body-text">Meu objetivo é atuar como analista de dados, cientista de dados e estatístico, aplicando métodos estatísticos avançados na construção de modelos, análise de séries temporais e desenvolvimento de visualizações interativas, com foco na geração de insights estratégicos. Trabalho com R (Shiny e Quarto) e Python (Streamlit, scikit-learn) para análises, relatórios, aplicações interativas e modelos de predição.</p>
         <p class="body-text">Meus interesses concentram-se em ciência de dados, métodos estatísticos computacionais, análise exploratória de dados, aprendizado de máquina e comunicação científica, buscando transformar dados em informações úteis para apoiar a tomada de decisões e a produção de conhecimento.</p>
       </div>
@@ -426,17 +434,19 @@ html,body{height:100%;overflow:hidden;font-family:'DM Sans',sans-serif}
       </div>
     </div>
     <div class="comp-band">
-      <div class="comp-title">Nível de proficiência</div>
-      <div class="comp-sub">Autoavaliação das principais ferramentas</div>
+      <div class="comp-title">Linguagens e nível de domínio</div>
+      <div class="comp-sub">Autoavaliação: básico, intermediário ou avançado</div>
       <div class="skill-bars">
-        <div class="sb-row"><div class="sb-label"><svg viewBox="0 0 24 24"><polyline points="8 6 3 12 8 18"/><polyline points="16 6 21 12 16 18"/></svg>Python</div><div class="sb-track"><div class="sb-fill" data-w="85"></div></div><span class="sb-pct">85%</span></div>
-        <div class="sb-row"><div class="sb-label"><svg viewBox="0 0 24 24"><polyline points="8 6 3 12 8 18"/><polyline points="16 6 21 12 16 18"/></svg>R</div><div class="sb-track"><div class="sb-fill" data-w="80"></div></div><span class="sb-pct">80%</span></div>
-        <div class="sb-row"><div class="sb-label"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-6"/></svg>Machine Learning</div><div class="sb-track"><div class="sb-fill" data-w="75"></div></div><span class="sb-pct">75%</span></div>
-        <div class="sb-row"><div class="sb-label"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9"/></svg>Séries Temporais</div><div class="sb-track"><div class="sb-fill" data-w="82"></div></div><span class="sb-pct">82%</span></div>
-        <div class="sb-row"><div class="sb-label"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20"/></svg>Sensoriamento Remoto</div><div class="sb-track"><div class="sb-fill" data-w="70"></div></div><span class="sb-pct">70%</span></div>
-        <div class="sb-row"><div class="sb-label"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>SQL</div><div class="sb-track"><div class="sb-fill" data-w="65"></div></div><span class="sb-pct">65%</span></div>
-        <div class="sb-row"><div class="sb-label"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18"/></svg>Modelos de Regressão</div><div class="sb-track"><div class="sb-fill" data-w="78"></div></div><span class="sb-pct">78%</span></div>
-        <div class="sb-row"><div class="sb-label"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Estatística Espacial</div><div class="sb-track"><div class="sb-fill" data-w="71"></div></div><span class="sb-pct">71%</span></div>
+        <div class="sb-row"><div class="sb-label">R</div><div class="lv" data-lv="2" role="img" aria-label="Nível intermediário"><i></i><i></i><i></i></div><span class="lv-txt">Intermediário</span></div>
+        <div class="sb-row"><div class="sb-label">Quarto Document (Markdown)</div><div class="lv" data-lv="2" role="img" aria-label="Nível intermediário"><i></i><i></i><i></i></div><span class="lv-txt">Intermediário</span></div>
+        <div class="sb-row"><div class="sb-label">LaTeX (TeX)</div><div class="lv" data-lv="2" role="img" aria-label="Nível intermediário"><i></i><i></i><i></i></div><span class="lv-txt">Intermediário</span></div>
+        <div class="sb-row"><div class="sb-label">Excel</div><div class="lv" data-lv="2" role="img" aria-label="Nível intermediário"><i></i><i></i><i></i></div><span class="lv-txt">Intermediário</span></div>
+        <div class="sb-row"><div class="sb-label">Python</div><div class="lv" data-lv="1.5" role="img" aria-label="Nível básico a intermediário"><i></i><i></i><i></i></div><span class="lv-txt">Básico/Intermediário</span></div>
+        <div class="sb-row"><div class="sb-label">Git</div><div class="lv" data-lv="1.5" role="img" aria-label="Nível básico a intermediário"><i></i><i></i><i></i></div><span class="lv-txt">Básico/Intermediário</span></div>
+        <div class="sb-row"><div class="sb-label">GitHub</div><div class="lv" data-lv="1" role="img" aria-label="Nível básico"><i></i><i></i><i></i></div><span class="lv-txt">Básico</span></div>
+        <div class="sb-row"><div class="sb-label">Shiny</div><div class="lv" data-lv="1" role="img" aria-label="Nível básico"><i></i><i></i><i></i></div><span class="lv-txt">Básico</span></div>
+        <div class="sb-row"><div class="sb-label">Streamlit</div><div class="lv" data-lv="1" role="img" aria-label="Nível básico"><i></i><i></i><i></i></div><span class="lv-txt">Básico</span></div>
+        <div class="sb-row"><div class="sb-label">HTML e CSS</div><div class="lv" data-lv="1" role="img" aria-label="Nível básico"><i></i><i></i><i></i></div><span class="lv-txt">Básico</span></div>
       </div>
     </div>
   </div>
@@ -487,16 +497,18 @@ html,body{height:100%;overflow:hidden;font-family:'DM Sans',sans-serif}
         <div class="ptags"><span class="ptag">R</span><span class="ptag">Regressão Logística</span><span class="ptag">NHANES</span><span class="ptag">Bioestatística</span></div>
       </div>
       <div class="pcard">
-        <div class="ptype">Projeto Acadêmico · Em Andamento</div>
+        <div class="ptype">Projeto Acadêmico · Finalizado</div>
         <div class="ptitle">Séries Temporais com Tendência</div>
         <p class="pdesc">Análise de séries temporais de usuários de internet no Brasil, com estudo de tendência, decomposição da série e métodos de previsão.</p>
         <div class="ptags"><span class="ptag">R</span><span class="ptag">Séries Temporais</span><span class="ptag">Forecast</span><span class="ptag">Tendência</span></div>
+        <a href="docs/estudos/tendencia.html" target="_blank" rel="noopener" class="plink">Ver relatório →</a>
       </div>
       <div class="pcard">
-        <div class="ptype">Projeto Acadêmico · Em Andamento</div>
+        <div class="ptype">Projeto Acadêmico · Finalizado</div>
         <div class="ptitle">Séries Temporais com Sazonalidade</div>
         <p class="pdesc">Estudo e modelagem de séries temporais de passageiros aéreos, explorando padrões sazonais, decomposição temporal e técnicas de previsão (ETS, ARIMA, SARIMA e STL em documentos Quarto).</p>
         <div class="ptags"><span class="ptag">R</span><span class="ptag">tsibble</span><span class="ptag">fable</span><span class="ptag">Séries Temporais</span><span class="ptag">Sazonalidade</span></div>
+        <a href="docs/estudos/sazonalidade.html" target="_blank" rel="noopener" class="plink">Ver relatório →</a>
       </div>
       <div class="pcard">
         <div class="ptype">Em desenvolvimento · Consultoria Estatística</div>
@@ -513,16 +525,30 @@ html,body{height:100%;overflow:hidden;font-family:'DM Sans',sans-serif}
         <a href="https://estatlab.github.io/estatlab-site" target="_blank" rel="noopener" class="plink">Ver site →</a>
       </div>
       <div class="pcard">
-        <div class="ptype">Projeto Acadêmico · Em Andamento</div>
+        <div class="ptype">Projeto Acadêmico · Finalizado</div>
         <div class="ptitle">Análise espacial de queimadas em Pernambuco</div>
         <p class="pdesc">Estudo da distribuição espacial dos focos de queimadas em Pernambuco, com mapas interativos e estáticos, densidade de kernel e modelo de processo pontual, em relatório e apresentação Quarto.</p>
         <div class="ptags"><span class="ptag">R</span><span class="ptag">Quarto</span><span class="ptag">sf</span><span class="ptag">geobr</span><span class="ptag">tmap</span><span class="ptag">spatstat</span></div>
+        <a href="docs/estudos/queimada_PE.html" target="_blank" rel="noopener" class="plink">Ver relatório →</a>
       </div>
       <div class="pcard">
         <div class="ptype">Extensão · 07/2026 – atual</div>
         <div class="ptitle">Data Health — OpenDataSUS</div>
         <p class="pdesc">Programa "Desafios da Gestão em Saúde Pública no uso do OpenDataSUS": capacita profissionais e estudantes da saúde a acessar, organizar e analisar grandes bases do SUS (160 horas de cursos e e-book interativo).</p>
         <div class="ptags"><span class="ptag">R</span><span class="ptag">Python</span><span class="ptag">SQL</span><span class="ptag">QGIS</span></div>
+      </div>
+      <div class="pcard">
+        <div class="ptype">Projeto Acadêmico · Finalizado</div>
+        <div class="ptitle">Análise espacial Violência Doméstica e Familiar contra a Mulher em Pernambuco</div>
+        <p class="pdesc">Análise espacial dos registros de violência doméstica contra a mulher nos municípios de Pernambuco entre 2022 e 2025, com taxas por município, matriz de vizinhança, índice de Moran global e local (LISA) e razão de incidência padronizada (SIR), em relatório Quarto da disciplina de Estatística Espacial.</p>
+        <div class="ptags"><span class="ptag">R</span><span class="ptag">Quarto</span><span class="ptag">spdep</span><span class="ptag">Moran / LISA</span><span class="ptag">SIR</span></div>
+        <a href="docs/estudos/analise_espacial.html" target="_blank" rel="noopener" class="plink">Ver relatório →</a>
+      </div>
+      <div class="pcard">
+        <div class="ptype">Pesquisa e Extensão · 09/2026 – atual · Em andamento</div>
+        <div class="ptitle">Observatório da Infância e Adolescência</div>
+        <p class="pdesc">Integrante da equipe do Observatório, vinculado à Escola de Conselhos, ao Programa de Pós-Graduação em Serviço Social e ao NUPECIJ/UEPB, com atividades de mapeamento do perfil da infância e adolescência no estado da Paraíba (20 h semanais). Coordenação da Profa. Dra. Mônica Barros da Nóbrega.</p>
+        <div class="ptags"><span class="ptag">Estatística</span><span class="ptag">Infância e adolescência</span><span class="ptag">Paraíba</span><span class="ptag">NUPECIJ/UEPB</span></div>
       </div>
     </div>
   </div>
